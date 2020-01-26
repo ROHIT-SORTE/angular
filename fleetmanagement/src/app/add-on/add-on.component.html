@@ -1,0 +1,32 @@
+
+    <div class="container" align="center"> <b><u> Rental Add-ons </u></b> </div><br/>
+    <div class="container">
+        <fieldset>
+      <table align="center">
+      <tr><th > <input type="checkbox" [(ngModel)]="obj['Gps']" value="true" name="Gps" >GPS Navigation</th>
+          <td> $10.00/day</td><br/>
+          <td> <img src="./assets/img/gps.jpg" alt="" height="200" width="300"></td> </tr>
+       <tr><th ><input type="checkbox" [(ngModel)]="obj['Camping kit']" value="true" name="Campingkit" >Camping Kit</th>
+            <td> $30.00/day</td><br/>
+            <td> <img src="./assets/img/CampingKit.jpg" alt="" height="200" width="300"></td> </tr>
+        <tr><th ><input type="checkbox" [(ngModel)]="obj['Child Seats']" value="true" name="ChildSeats" >Child Seats</th>
+            <td> $2.00/day (For additional seat. 1 seat free)</td><br/>
+       <td> <img src="./assets/img/childseat.jpg" alt="" height="200" width="300"></td> </tr>
+       <td>Additional Seats</td>     
+      <select>
+        <option value="one">1</option>   
+      <option value="two">2</option> 
+      <option value="three">3</option>
+      <option value="four">4</option>
+      <option value="five">5</option>
+    </select>
+        <tr><th > <input type="checkbox" [(ngModel)]="obj['Fishing Rod']" name="Fishing Rod" >Fishing Rod</th>
+              <td>  $5.00/day</td><br/>
+              <td> <img src="./assets/img/FishingRod.jpg" alt="" height="200" width="300"></td> </tr>
+
+        <tr><th>
+          <input type="submit" (click)="proceed()" value="Proceed">
+        </th></tr>
+    </table>
+  </fieldset>
+    </div>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        
+        <div class="container">
+            <br>
+            <h4 style="color:#17a2b8;"><u>Confirm Booking</u></h4>
+            <div class="row">
+                <div class="col-6">
+
+                    <br>
+                    <div class="row">
+<!-- 
+                        <div class="col-4">
+                            Pickup-up <input type="text" placeholder="Select Date" class="form-control" bsDatepicker>
+                        </div>
+                        <div class="col-2" style="padding-bottom:8px;">
+                            <timepicker [(ngModel)]="rental" name="Rental"></timepicker>
+                        </div> -->
+                    </div>
+                    Pickup-up at: <p><b>{{rentLocation}}</b></p> <br>
+                    Vehicle Type: <b>{{CarType}}</b>
+                </div>
+
+                <div class="col-6">
+
+                    <br>
+                    <div class="row">
+
+                        <!-- <div class="col-4">
+                            Return <input type="text" placeholder="Select Date" class="form-control" bsDatepicker>
+                        </div>
+                        <div class="col-2" style="padding-bottom:8px;">
+                            <timepicker [(ngModel)]="rental" name="Rental"></timepicker>
+                        </div> -->
+                    </div>
+                    Return at: <p><b>{{returnLocation}}</b></p><br>
+                    Rental Add-on: <b>{{AddOn}}</b>
+                    
+                    <!-- <p>
+                       <b>{{item1}}</b> <span> &nbsp;</span><b>{{item2}}</b> <span>&nbsp; </span>&nbsp; <b>{{item3}}</b> 
+                    </p> -->
+
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-6">
+                    <br>
+                    First Name
+                    <input type="text" class="form-control" value="{{users?.userfirstname}}">    
+                    <br>
+                    Address 1
+                    <input type="text" class="form-control"value="{{users?.useraddress1}}">
+                </div>
+                <div class="col-6">
+                    <br>
+                    Last Name
+                    <input type="text" class="form-control" value="{{users?.userlastname}}">
+                 <br>
+                 Address 2
+                    <input type="text" class="form-control" value="{{users?.useraddress2}}">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-6">
+
+                    <br>
+                    Email
+                    <input type="text" class="form-control" value="{{users?.useremailid}}">
+                    <br>
+                    Passport No.
+                    <input type="text" class="form-control" value="{{users?.userpassportno}}">
+                    <br>
+                    Contact Number
+                    <input type="text" class="form-control" value="{{users?.userphoneno}}">
+                </div>
+                <div class="col-6"> 
+                    
+                    <br>
+                    Aadhar
+                    <input type="text" class="form-control" value="{{users?.useraadharno}}">
+                    <br>
+                    Driving Licence
+                    <input type="text" class="form-control" value="{{users?.userdrivinglicenceno}}" >
+                </div>
+            </div>
+
+            <div style="padding-left: 250px;">
+                <br>
+                <div class="row">
+                    <div style="padding-right: 10px;">
+                        <button type="button" class="btn btn-outline-primary"
+                            style="padding:0px 80px 0px 80px">Confirm</button>
+                    </div>
+                    <div style="padding-left: 10px;">
+                        <button type="button" class="btn btn-outline-primary"
+                            style="padding:0px 80px 0px 80px">Modify</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <br>
+</body>
+
+</html>

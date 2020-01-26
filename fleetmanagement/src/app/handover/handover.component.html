@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HandOver Page</title>
+</head>
+<body>
+    <div align="center">
+        
+    <h4 style="color:#17a2b8;"><u> HandOver</u></h4><br/>
+    </div>
+    <div [formGroup]="myGroup">
+        <div style="padding-left: 500px;">
+        <div class="row">
+            
+            <div style="padding-right: 10px;"  >
+                
+                <input type="text"  placeholder="Booking Id" id="bookingid"
+                 class="form-control" name="billsearch" formControlName="search1">
+                
+            </div>
+            <div style="padding-left: 10px;">
+                
+                <input type="submit"  (click)="onSubmit();isChecked =! isChecked"class="btn btn-outline-primary" 
+                    value="Search" ><br><br>
+            </div> 
+
+            <div *ngIf="isChecked" class="container">
+                <h4 style="color:#17a2b8;"><u>Billing</u></h4>
+                <div [formGroup]="myGroup">
+                <div class="row">
+                    
+                    <div class="col-2">
+                        <br>
+                        User Id
+                        <input type="text" name="fname" class="form-control" value="{{users.registeruser.userid}}">  
+                    </div>  
+                    <div class="col-3">  
+                        <br>
+                        First Name
+                        <input type="text" name="fname"  class="form-control" value="{{users.registeruser.userfirstname}}">  
+                    </div>
+                    <div class="col-3">
+                        <br>
+                        Last Name
+                        <input type="text" name="fname"  class="form-control" value="{{users.registeruser.userlastname}}">
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="col-4">
+                        <br>
+                        Address
+                        <input type="text"  class="form-control">
+                        <br>
+                        Aadhar No.
+                        <input type="text"  class="form-control">
+                        <br>
+                        Start date
+                        <input type="text" placeholder="DD/MM/YYYY"  class="form-control" bsDatepicker>              
+                    </div>
+                    <div class="col-4"> 
+                        <br>
+                        Vehicle type
+                        <input type="text"  class="form-control">
+                        <br>
+                        pickup Hub
+                        <input type="text"  class="form-control">
+                        <br>
+                        Drop Hub
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                </div>
+    
+                <div style="padding-left: 250px;">
+                    <br>
+                    <div class="row">
+                        <div style="padding-right: 10px;">
+                            <button type="submit" class="btn btn-outline-primary"
+                                style="padding:0px 80px 0px 80px">Confirm</button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        </div>
+    </div>
+
+</body>
+</html>
